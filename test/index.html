@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <!-- Presell builder by theMinerX.com -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="description" content="ManHood Plus - Pay Only on Delivery" />
+    <meta name="keywords" content="ManHood Plus, Pay Only on Delivery" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>ManHood Plus | Pay Only on Delivery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+      :root {
+        --primary: #4194ec;
+        --primary-dark: #177ae3;
+        --secondary: #ffcc00;
+        --secondary-dark: #e6b800;
+        --accent: #25d366;
+        --accent-dark: #1ebc5c;
+        --danger: #ff4757;
+        --danger-dark: #ff2e43;
+        --light: #f9f9f9;
+        --dark: #222;
+        --gray: #888;
+        --white: #ffffff;
+        --border-radius: 12px;
+        --box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        --transition: all 0.3s ease;
+      }
+      
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Montserrat', 'Arial', sans-serif;
+      }
+
+      body.light {
+        background: var(--light);
+        color: var(--dark);
+        line-height: 1.6;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 16px;
+      }
+
+      /* ================= HEADER ================= */
+      .cod-header {
+        background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+        color: var(--white);
+        padding: 20px 0;
+        text-align: center;
+        border-radius: 0 0 var(--border-radius) var(--border-radius);
+        margin-bottom: 30px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      }
+
+      .cod-header-title {
+        font-size: 1.8rem;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+      }
+
+      /* ================= BADGE ================= */
+      .cod-badge {
+        background: var(--secondary);
+        color: var(--dark);
+        padding: 12px 20px;
+        text-align: center;
+        font-weight: 700;
+        font-size: 1.1rem;
+        border-radius: 30px;
+        margin: 20px auto;
+        max-width: 350px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        animation: pulse 2s infinite;
+      }
+
+      @keyframes pulse {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.03); }
+        100% { transform: scale(1); }
+      }
+
+      /* ================= HERO ================= */
+      .cod-hero {
+        text-align: center;
+        padding: 30px 16px;
+        background: var(--white);
+        border-radius: var(--border-radius);
+        box-shadow: var(--box-shadow);
+        margin-bottom: 30px;
+      }
+
+      .cod-hero-title {
+        font-size: 2.5rem;
+        font-weight: 800;
+        margin-bottom: 16px;
+        color: var(--primary);
+        background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .cod-hero-subtitle {
+        font-size: 1.2rem;
+        color: var(--gray);
+        margin-bottom: 20px;
+        font-weight: 500;
+      }
+
+      .cod-hero-image {
+        max-width: 320px;
+        width: 100%;
+        border-radius: var(--border-radius);
+        margin: 20px auto;
+        transition: var(--transition);
+      }
+
+      .cod-hero-image:hover {
+        transform: translateY(-5px);
+      }
+
+      /* ================= BENEFITS ================= */
+      .cod-benefits {
+        background: var(--white);
+        padding: 40px 30px;
+        margin: 30px 0;
+        border-radius: var(--border-radius);
+        box-shadow: var(--box-shadow);
+      }
+
+      .cod-section-title {
+        text-align: center;
+        font-size: 1.8rem;
+        font-weight: 700;
+        margin-bottom: 30px;
+        color: var(--primary);
+        position: relative;
+        padding-bottom: 15px;
+      }
+
+      .cod-section-title:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80px;
+        height: 4px;
+        background: linear-gradient(to right, var(--primary), var(--secondary));
+        border-radius: 2px;
+      }
+
+      .cod-benefits-list {
+        list-style: none;
+      }
+
+      .cod-benefits-item {
+        font-size: 1.1rem;
+        margin: 16px 0;
+        padding: 16px 20px;
+        border-left: 5px solid var(--primary);
+        background: #f1f7ff;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        transition: var(--transition);
+      }
+
+      .cod-benefits-item:hover {
+        transform: translateX(5px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+      }
+
+      .cod-benefits-item i {
+        margin-right: 12px;
+        color: var(--primary);
+        font-size: 1.3rem;
+      }
+
+      /* ================= OFFERS ================= */
+      .cod-offers {
+        padding: 50px 16px;
+        text-align: center;
+      }
+
+      .cod-offers-content {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+        margin-top: 30px;
+      }
+
+      .cod-offers-item {
+        background: var(--white);
+        padding: 30px 25px;
+        border-radius: var(--border-radius);
+        width: 320px;
+        box-shadow: var(--box-shadow);
+        transition: var(--transition);
+        position: relative;
+        overflow: hidden;
+        border: 2px solid transparent;
+      }
+
+      .cod-offers-item:hover {
+        transform: translateY(-10px);
+        border-color: var(--primary);
+      }
+
+      .cod-offers-item-popular {
+        background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+        color: var(--white);
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 8px 20px;
+        font-size: 0.9rem;
+        font-weight: 600;
+        border-radius: 0 0 0 10px;
+      }
+
+      .cod-offers-item-title {
+        font-size: 1.4rem;
+        font-weight: 700;
+        margin-bottom: 15px;
+        color: var(--primary);
+      }
+
+      .cod-offers-item-price-high {
+        text-decoration: line-through;
+        color: var(--gray);
+        font-size: 1rem;
+      }
+
+      .cod-offers-item-price-for {
+        font-size: 0.9rem;
+        margin: 10px 0;
+        color: var(--gray);
+      }
+
+      .cod-offers-item-price-low {
+        font-size: 2.2rem;
+        font-weight: 800;
+        color: var(--danger);
+        margin-bottom: 20px;
+      }
+
+      .cod-offers-item-saving {
+        background: #ffeaa7;
+        padding: 8px 12px;
+        border-radius: 20px;
+        font-size: 0.9rem;
+        font-weight: 600;
+        margin-bottom: 20px;
+        display: inline-block;
+      }
+
+      .cod-offers-item-cta-btn {
+        display: table;
+        text-decoration: none;
+        background: linear-gradient(135deg, var(--secondary), var(--secondary-dark));
+        color: var(--dark);
+        border: none;
+        padding: 16px 28px;
+        font-size: 1.1rem;
+        font-weight: 600;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: var(--transition);
+        width: 100%;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .cod-offers-item-cta-btn:hover {
+        background: linear-gradient(135deg, var(--secondary-dark), var(--secondary));
+        transform: translateY(-3px);
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+      }
+
+      /* ================= SUPPORT ================= */
+      .cod-support {
+        padding: 50px 16px;
+        background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+        color: var(--white);
+        text-align: center;
+        border-radius: var(--border-radius);
+        margin: 40px 0;
+        box-shadow: var(--box-shadow);
+      }
+
+      .cod-support-title {
+        font-size: 1.8rem;
+        font-weight: 700;
+        margin-bottom: 20px;
+      }
+
+      .cod-support-subtitle {
+        font-size: 1.1rem;
+        margin-bottom: 30px;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .cod-support-whatsapp {
+        margin-top: 20px;
+      }
+
+      .cod-support-whatsapp-content {
+        background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+        color: var(--white);
+        padding: 18px 32px;
+        border-radius: 50px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 1.2rem;
+        transition: var(--transition);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      .cod-support-whatsapp-content:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      }
+
+      .cod-support-whatsapp-content i {
+        margin-right: 10px;
+        font-size: 1.4rem;
+      }
+
+      /* ================= GUARANTEE ================= */
+      .cod-guarantee {
+        background: var(--white);
+        padding: 40px 30px;
+        border-radius: var(--border-radius);
+        margin: 40px 0;
+        text-align: center;
+        box-shadow: var(--box-shadow);
+      }
+
+      .cod-guarantee-icon {
+        font-size: 3rem;
+        color: var(--primary);
+        margin-bottom: 20px;
+      }
+
+      .cod-guarantee-text {
+        font-size: 1.1rem;
+        max-width: 700px;
+        margin: 0 auto;
+      }
+      .capitalize {
+        text-transform: capitalize;
+      }
+
+      .uppercase {
+        text-transform: uppercase;
+      }
+
+      /* ================= FOOTER ================= */
+      .cod-footer {
+        text-align: center;
+        padding: 30px 0;
+        color: var(--gray);
+        font-size: 0.9rem;
+        border-top: 1px solid #eee;
+        margin-top: 40px;
+      }
+      .cta{
+        cursor: pointer;
+      }
+
+      /* ================= RESPONSIVO ================= */
+      @media (max-width: 768px) {
+        .cod-hero-title {
+          font-size: 2rem;
+        }
+        
+        .cod-section-title {
+          font-size: 1.6rem;
+        }
+        
+        .cod-offers-content {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .cod-offers-item {
+          width: 100%;
+          max-width: 350px;
+        }
+        
+        .cod-benefits-item {
+          font-size: 1rem;
+          padding: 14px 18px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .cod-hero-title {
+          font-size: 1.8rem;
+        }
+        
+        .cod-badge {
+          font-size: 1rem;
+          padding: 10px 15px;
+        }
+        
+        .cod-support-title {
+          font-size: 1.5rem;
+        }
+        
+        .cod-support-whatsapp-content {
+          padding: 14px 24px;
+          font-size: 1.1rem;
+        }
+      }
+    </style>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17438607237"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-17438607237');
+</script><script>
+    function click() {
+      document.getElementById("goToPage").click();
+    }
+    </script>
+    
+  </head>
+
+  <body class="light">
+    <div class="container">
+      <header class="cod-header">
+        <h1 class="cod-header-title uppercase">ManHood Plus</h1>
+      </header>
+      
+      <div class="cod-badge cta" name="cta">
+        <i class="fas fa-truck"></i> Pay Only on Delivery
+      </div>
+      
+      <section class="cod-hero">
+        <h1 class="cod-hero-title capitalize">Ready to lose weight quickly and healthily?</h1>
+        <p class="cod-hero-subtitle">Guarantee yours now and pay only when you receive it, directly to the delivery person. In other words: zero risk for you!</p>
+        <img class="cod-hero-image" src="data:image/jpeg;base64,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">
+      </section>
+      
+      <div class="cod-badge cta" name="cta">
+        <i class="fas fa-gift"></i> Free Shipping + Delivery Scheduling
+      </div>
+      
+      <section class="cod-benefits">
+        <h2 class="cod-section-title">Exclusive Benefits</h2>
+        <ul class="cod-benefits-list">
+          <li class="cod-benefits-item">
+            <i class="fas fa-hand-holding-usd"></i> Pay Only on Delivery
+          </li>
+          <li class="cod-benefits-item">
+            <i class="fas fa-shipping-fast"></i> Free Shipping to Your Region
+          </li>
+          <li class="cod-benefits-item">
+            <i class="fas fa-box-open"></i> Discrete and protected packaging
+          </li>
+          <li class="cod-benefits-item">
+            <i class="fas fa-calendar-check"></i> Schedule your delivery time
+          </li>
+          <li class="cod-benefits-item">
+            <i class="fas fa-lock"></i> Safe Buying
+          </li>
+        </ul>
+      </section>
+      
+      <div class="cod-badge cta" name="cta">
+        <i class="fas fa-exclamation-triangle"></i> Last Units Available
+      </div>
+      
+      <section class="cod-offers">
+        <h2 class="cod-section-title">Special Offers</h2>
+        <p class="cod-hero-subtitle">Special Offer Valid Only Today</p>
+        
+        <div class="cod-offers-content" id="cod-offers-content">
+        </div>
+      </section>
+      
+      <div class="cod-badge cta" name="cta">
+        <i class="fas fa-shield-alt"></i> Satisfaction Guarantee
+      </div>
+      
+      <section class="cod-guarantee">
+        <div class="cod-guarantee-icon">
+          <i class="fas fa-medal"></i>
+        </div>
+        <h2 class="cod-section-title">Satisfaction Guarantee</h2>
+        <p class="cod-guarantee-text">If you are not completely satisfied, upon receiving the product, you don't have to pay anything. No questions asked, no complications. The return is immediate, your satisfaction is our number one priority.</p>
+      </section>
+      
+      <section class="cod-support">
+        <h2 class="cod-support-title">Don't have any doubts!</h2>
+        <p class="cod-support-subtitle">Our experts are available to answer all your questions and help you schedule your delivery as soon as possible!</p>
+        
+        <div class="cod-support-whatsapp" id="cod-support-whatsapp">
+          <a class="cod-support-whatsapp-content" href="https://wa.me/null" target="_blank">
+            <i class="fab fa-whatsapp"></i> Buy via WhatsApp
+          </a>
+        </div>
+      </section>
+      
+      <footer class="cod-footer">
+        <p>© 2025 <span class="capitalize">ManHood Plus</span>. All rights reserved.</p>
+        <p>This site is not affiliated with Facebook or any Facebook entity.</p>
+      </footer>
+    </div>
+
+    <script>
+      init = function(){
+        const offers = [{"name":"Promo today","price_high":"1074","price_low":"294","link":"https://www.firewolftrack.com/2T32JNS1/XCKF12K/?uid=4273","saving":"780.00"}];
+        const offersContent = document.getElementById('cod-offers-content');
+        offersContent.innerHTML = offers.map((offer) => {
+          return `
+            <div class="cod-offers-item">
+              <div class="cod-offers-item-title capitalize">${offer.name}</div>
+              <div class="cod-offers-item-price-high">$ ${offer.price_high}</div>
+              <div class="cod-offers-item-price-for uppercase"><strong>For just</strong></div>
+              <div class="cod-offers-item-price-low">$ ${offer.price_low}</div>
+              <div class="cod-offers-item-saving">Save $ ${offer.saving}</div>
+              <div class="cod-offers-item-cta">
+                <a class="cod-offers-item-cta-btn" href="${offer.link}" target="_blank">Buy now and pay later</a>
+              </div>
+            </div>
+          `;
+        }).join('');
+
+        const supportWhatsapp = document.getElementById('cod-support-whatsapp');
+        const whatsapp = null;
+        if(whatsapp){
+          supportWhatsapp.style.display = 'block';
+        }else{
+          supportWhatsapp.style.display = 'none';
+        }
+      }
+
+      cta = function(){
+        ctas = document.getElementsByName('cta');
+        for(let i = 0; i < ctas.length; i++){
+          ctas[i].addEventListener('click', function(){
+            goToOffers();
+          });
+        }
+      }
+
+      // go to id cod-offers-content
+      goToOffers = function(){
+        offersContent = document.getElementById('cod-offers-content');
+        if (offersContent) {
+          offersContent.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
+
+       document.addEventListener('DOMContentLoaded', () => {init(); cta();});
+    </script>
+  </body>
+</html>
